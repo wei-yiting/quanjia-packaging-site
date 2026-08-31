@@ -295,13 +295,6 @@ section.block.alt {
   display: block;
 }
 
-.visual.eco-visual {
-  background: var(--accent-soft);
-}
-
-.visual svg { width: 46%; height: 46%; stroke: var(--ink); fill: none; stroke-width: 1.3; opacity: 0.85; }
-.eco-visual svg { stroke: var(--accent-strong); }
-
 /* ---------- registration footnote ---------- */
 .registry {
   font-size: 12px;
