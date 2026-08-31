@@ -288,9 +288,11 @@ section.block.alt {
   overflow: hidden;
 }
 
-.visual.brand-visual {
-  background:
-    repeating-linear-gradient(135deg, var(--surface), var(--surface) 22px, var(--kraft-deep) 22px, var(--kraft-deep) 44px);
+.visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .visual.eco-visual {
@@ -299,21 +301,6 @@ section.block.alt {
 
 .visual svg { width: 46%; height: 46%; stroke: var(--ink); fill: none; stroke-width: 1.3; opacity: 0.85; }
 .eco-visual svg { stroke: var(--accent-strong); }
-
-.badge-stamp {
-  position: absolute;
-  bottom: 18px;
-  right: 18px;
-  border: 2px solid var(--accent);
-  color: var(--accent-strong);
-  font-family: "Zilla Slab", serif;
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  padding: 5px 12px;
-  border-radius: 3px;
-  transform: rotate(-4deg);
-}
 
 /* ---------- registration footnote ---------- */
 .registry {
