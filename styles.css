@@ -1,35 +1,29 @@
 :root {
-  --kraft: #E3D6BA;
-  --kraft-deep: #D2C09A;
-  --surface: #EDE4CC;
-  --ink: #2A2015;
-  --text: #4A3E2C;
-  --text-muted: #7A6B52;
-  --line: #B8A578;
-  --eco: #3F5C3A;
-  --eco-strong: #2E4529;
-  --eco-soft: #D9E3D3;
-  --stamp: #A8431F;
-  --stamp-strong: #8A3417;
-  --stamp-soft: #EDD9CC;
-  --shadow: 0 2px 4px rgba(42, 32, 21, 0.08), 0 12px 28px rgba(42, 32, 21, 0.07);
+  --kraft: #DAD3C2;
+  --kraft-deep: #C7BC9F;
+  --surface: #E7E1D1;
+  --ink: #21262F;
+  --text: #454C57;
+  --text-muted: #767D89;
+  --line: #B3A98F;
+  --accent: #21654F;
+  --accent-strong: #164A3A;
+  --accent-soft: #D2E2D8;
+  --shadow: 0 2px 4px rgba(33, 38, 47, 0.08), 0 12px 28px rgba(33, 38, 47, 0.07);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --kraft: #1D1712;
-    --kraft-deep: #241C15;
-    --surface: #251D15;
-    --ink: #EDE4CC;
-    --text: #C9BBA0;
-    --text-muted: #948364;
-    --line: #4A3E2C;
-    --eco: #7FA073;
-    --eco-strong: #9BBB8E;
-    --eco-soft: #24301F;
-    --stamp: #D97A4E;
-    --stamp-strong: #E8956F;
-    --stamp-soft: #3A2418;
+    --kraft: #191C1F;
+    --kraft-deep: #212528;
+    --surface: #212528;
+    --ink: #E5DFCF;
+    --text: #BFC5CC;
+    --text-muted: #8B9299;
+    --line: #3D4247;
+    --accent: #4E9C81;
+    --accent-strong: #6DBBA0;
+    --accent-soft: #1C3129;
     --shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 12px 28px rgba(0, 0, 0, 0.25);
   }
 }
@@ -67,9 +61,9 @@ a { color: inherit; }
 /* ---------- placeholder marker ---------- */
 .todo {
   display: inline;
-  background: var(--stamp-soft);
-  color: var(--stamp-strong);
-  border: 1px dashed var(--stamp);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  border: 1px dashed var(--accent);
   border-radius: 4px;
   padding: 1px 8px;
   font-size: 0.85em;
@@ -118,7 +112,7 @@ nav a {
   color: var(--text);
 }
 
-nav a:hover { color: var(--eco-strong); }
+nav a:hover { color: var(--accent-strong); }
 
 /* ---------- hero ---------- */
 .hero {
@@ -132,12 +126,12 @@ nav a:hover { color: var(--eco-strong); }
   height: 46px;
   background: repeating-linear-gradient(
     -45deg,
-    var(--stamp-soft),
-    var(--stamp-soft) 14px,
+    var(--kraft-deep),
+    var(--kraft-deep) 14px,
     transparent 14px,
     transparent 28px
   );
-  opacity: 0.55;
+  opacity: 0.65;
 }
 
 .tape.t1 { top: 30px; left: -60px; width: 340px; transform: rotate(-6deg); }
@@ -149,7 +143,7 @@ nav a:hover { color: var(--eco-strong); }
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--eco-strong);
+  color: var(--accent-strong);
   margin: 0 0 18px;
   position: relative;
 }
@@ -187,11 +181,11 @@ nav a:hover { color: var(--eco-strong); }
 }
 
 .btn.primary {
-  background: var(--stamp);
-  color: #FBF6EC;
+  background: var(--accent);
+  color: #F3F5F2;
 }
 
-.btn.primary:hover { background: var(--stamp-strong); }
+.btn.primary:hover { background: var(--accent-strong); }
 
 .btn.ghost {
   border-color: var(--ink);
@@ -247,7 +241,7 @@ section.block.alt {
   width: 40px;
   height: 40px;
   margin-bottom: 16px;
-  stroke: var(--eco-strong);
+  stroke: var(--accent-strong);
   fill: none;
   stroke-width: 1.6;
 }
@@ -300,18 +294,18 @@ section.block.alt {
 }
 
 .visual.eco-visual {
-  background: var(--eco-soft);
+  background: var(--accent-soft);
 }
 
 .visual svg { width: 46%; height: 46%; stroke: var(--ink); fill: none; stroke-width: 1.3; opacity: 0.85; }
-.eco-visual svg { stroke: var(--eco-strong); }
+.eco-visual svg { stroke: var(--accent-strong); }
 
 .badge-stamp {
   position: absolute;
   bottom: 18px;
   right: 18px;
-  border: 2px solid var(--stamp);
-  color: var(--stamp);
+  border: 2px solid var(--accent);
+  color: var(--accent-strong);
   font-family: "Zilla Slab", serif;
   font-weight: 700;
   font-size: 12px;
