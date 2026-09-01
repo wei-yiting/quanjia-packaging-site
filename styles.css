@@ -117,6 +117,11 @@ nav .wrap {
   width: 32px;
   height: 32px;
   flex-shrink: 0;
+  object-fit: contain;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-mark { filter: invert(1); }
 }
 
 nav ul {
