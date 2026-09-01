@@ -321,8 +321,8 @@ footer {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
   margin-bottom: 48px;
 }
 
