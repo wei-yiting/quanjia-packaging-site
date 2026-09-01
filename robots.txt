@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wei-yiting.github.io/quanjia-packaging-site/sitemap.xml
