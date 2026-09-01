@@ -3,8 +3,8 @@
   --kraft-deep: #C7BC9F;
   --surface: #E7E1D1;
   --ink: #21262F;
-  --text: #454C57;
-  --text-muted: #767D89;
+  --text: #3A404A;
+  --text-muted: #4A515C;
   --line: #B3A98F;
   --accent: #21654F;
   --accent-strong: #164A3A;
@@ -224,7 +224,7 @@ section.block.alt {
 
 .block-head p {
   font-size: 17px;
-  color: var(--text-muted);
+  color: var(--text);
   margin: 0;
 }
 
@@ -259,7 +259,7 @@ section.block.alt {
 
 .product p {
   font-size: 15.5px;
-  color: var(--text-muted);
+  color: var(--text);
   margin: 0;
 }
 
